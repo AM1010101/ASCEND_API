@@ -6,6 +6,8 @@ ASCEND_API
 
 Installation
 pip install -r requirements.txt
+Main api code is in app.py
+Tests are in test.py
 
 Quickly test it here:
     
