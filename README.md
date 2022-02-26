@@ -14,24 +14,30 @@ Tests are in test.py
 
 
     
-##endpoint 1
+## Endpoint 1
 > /device/<user_name>
-> GET returns basic info on all devices owned by <user_name>
+
+GET returns basic info on all devices owned by <user_name>
+
+Example: 
     http://54.172.7.149:8080/device/andrew_merrin
 
-##endpoint 2
+## Endpoint 2
 > /device/full/<id>
-> GET returns full information about a device with <id>
+
+GET returns full information about a device with <id>
+
+Example: 
     http://54.172.7.149:8080/device/full/1
 
-##endpoint 3
+## Endpoint 3
 > device/control/<id> #GET
 > device/control/<id> {updated_parameters: updated values} ~#PATCH
 > GET returns controlable infomration associated with <id>
 > PATCH updates and then returns updated controlable infomration associated with <id>
     http://54.172.7.149:8080/device/control/2
 
-endpoint 4
+## Endpoint 4
     http://54.172.7.149:8080/device/history/1,month,temp,10
     
     
