@@ -15,7 +15,7 @@ Tests are in test.py
 
     
 ## Endpoint 1
-/device/<user_name>
+/device/user_name
 
 GET returns basic info on all devices owned by <user_name>
 
@@ -23,7 +23,7 @@ GET returns basic info on all devices owned by <user_name>
     http://54.172.7.149:8080/device/andrew_merrin
 
 ## Endpoint 2
-/device/full/<id>
+/device/full/id
 
 GET returns full information about a device with <id>
 
@@ -32,9 +32,9 @@ GET returns full information about a device with <id>
 
 ## Endpoint 3
     
-device/control/<id> #GET
+device/control/id #GET
     
-device/control/<id> {updated_parameters: updated values} #PATCH
+device/control/id {updated_parameters: updated values} #PATCH
     
 GET returns controlable infomration associated with <id>
     
@@ -46,12 +46,13 @@ PATCH updates and then returns updated controlable infomration associated with <
 
 ## Endpoint 4
     
-device/control/<id>,<timeframe>,<attribute>,<data_points>
+device/control/id,timeframe,attribute,data_points
     
 GET returns timeseries information about <attribute> for device with <id>
  
-<timeframe> -> month, week, day, hour, minute
-<attribute> -> temp, operating_hours, analogue_in, spool_position, pressure, flow_torque, uptime, cycles, issues
+timeframe -> month, week, day, hour, minute
+    
+attribute -> temp, operating_hours, analogue_in, spool_position, pressure, flow_torque, uptime, cycles, issues
 
     
 >Example
