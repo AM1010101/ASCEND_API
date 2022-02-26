@@ -2,10 +2,9 @@
 
 ## README
 
+**Please refer to Documentation.pdf for more complete documentation**
 
 ## Installation 
-
-**Please refer to Documentation.pdf**
 
 pip install -r requirements.txt
 
