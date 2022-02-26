@@ -11,15 +11,24 @@ Main api code is in app.py
 
 Tests are in test.py
 
-Quickly test it here:
+
+
     
-endpoint 1
+##endpoint 1
+> /device/<user_name>
+> GET returns basic info on all devices owned by <user_name>
     http://54.172.7.149:8080/device/andrew_merrin
 
-endpoint 2
+##endpoint 2
+> /device/full/<id>
+> GET returns full information about a device with <id>
     http://54.172.7.149:8080/device/full/1
 
-endpoint 3
+##endpoint 3
+> device/control/<id> #GET
+> device/control/<id> {updated_parameters: updated values} ~#PATCH
+> GET returns controlable infomration associated with <id>
+> PATCH updates and then returns updated controlable infomration associated with <id>
     http://54.172.7.149:8080/device/control/2
 
 endpoint 4
