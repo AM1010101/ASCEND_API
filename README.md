@@ -1,18 +1,19 @@
 # ASCEND_API
-ASCEND_API
 
+## README
+
+
+## Installation 
 
 **Please refer to Documentation.pdf**
 
-Installation
 pip install -r requirements.txt
 
-Main api code is in app.py
+Main API code: app.py
 
-Tests are in test.py
+Tests: test.py
 
-
-
+Database: ascend.db
     
 ## Endpoint 1
 /device/user_name
