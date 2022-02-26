@@ -34,7 +34,7 @@ GET returns full information about a device with <id>
     
 device/control/<id> #GET
     
-device/control/<id> {updated_parameters: updated values} ~#PATCH
+device/control/<id> {updated_parameters: updated values} #PATCH
     
 GET returns controlable infomration associated with <id>
     
@@ -43,7 +43,18 @@ PATCH updates and then returns updated controlable infomration associated with <
 >Example
     http://54.172.7.149:8080/device/control/2
 
+
 ## Endpoint 4
+    
+device/control/<id>,<timeframe>,<attribute>,<data_points>
+    
+GET returns timeseries information about <attribute> for device with <id>
+ 
+<timeframe> -> month, week, day, hour, minute
+<attribute> -> temp, operating_hours, analogue_in, spool_position, pressure, flow_torque, uptime, cycles, issues
+
+    
+>Example
     http://54.172.7.149:8080/device/history/1,month,temp,10
     
     
